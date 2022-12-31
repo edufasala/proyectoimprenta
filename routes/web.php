@@ -3,6 +3,7 @@
 use  Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\RegisterController;
 use  App\Http\Controllers\SessionsController;
+use  App\Http\Controllers\UsersController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,20 +16,19 @@ use  App\Http\Controllers\SessionsController;
 */
 
 
-
+/*
 Route::get('/', function () {
     return view('auth/login');
 });
 
 Route::get('/login', function () {
     return view('auth/login');
-});
+}); */
 /*->middleware('auth'); */
-
 
 Route::get('/recuperar', [RegisterController::class, 'create'])->name('recuperar.index');
   /*  ->middleware('guest') */
-    
+
 
 /*
 Route::post('/register', [RegisterController::class, 'store'])
@@ -38,7 +38,7 @@ Route::post('/register', [RegisterController::class, 'store'])
 
 /* Route::get('/login', [SessionsController::class, 'create'])->name('login.index');
    ->middleware('guest')  */
-    
+
 
 /*
 Route::post('/login', [SessionsController::class, 'store'])
@@ -53,3 +53,9 @@ Route::get('/admin', [AdminController::class, 'index'])
     ->middleware('auth.admin')
     ->name('admin.index');
 */
+
+Route::get('users/index', [UsersController::class, 'index'])->name('users.index');
+Route::get('home', function(){
+    return view('home');
+});
+

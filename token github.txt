@@ -1,0 +1,40 @@
+token imprenta: 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
+token imprenta2: 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
+
+token itdelfos: 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
+
+Galv3z*1985
+
+composer config -g github-oauth.github.com XXXXXXXXXXXXXXXXXXXXXXX
+
+webmin
+https://44.207.160.17:10000 usuario: juan clave: SaaomiRGuHD1u4L
+
+phpmyadmin
+http://44.207.160.17/phpmyadmin  usuario: root  clave: VT^kU8uSh%Q4Svy
+
+primary #555CB8
+secondary #00C894 #6c757d
+danger #dc3545
+warning #ffba33
+info #4fb8c9
+success #4dca88 #198754
+
+vimeo
+times@times.com.ar
+Timespc991$
+
+// para borrar la branch local
+git branch -d localBranchName
+
+// para borrar la branch remota
+git push origin --delete remoteBranchName
+
+//actualizar lista de ramas
+git remote update origin --prune
+
+//copiar rama remota a local
+git checkout --track -b nombre-branch origin/development
+
+//copiar rama local a remota
+git push --set-upstream origin nombre-de-branch
